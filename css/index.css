@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'osbold';
+  src: url('../fonts/report\ w00\ bold.ttf');
+}
+
+@font-face {
+  font-family: 'osgothic';
+  src: url('../fonts/GOTHIC_0.TTF'), url('../fonts/GOTHICB_0.TTF'),
+    url('../fonts/GOTHICBI_0.TTF'), url('../fonts/GOTHICI_0.TTF');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 0;
+}
+
+.tp-top {
+  top: 0;
+}
+
+.tp-top img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.tp-bottom {
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.tp-bottom img {
+  max-height: 160px;
+  max-width: 50%;
+}
+
+.mian {
+  position: absolute;
+  top: 120px;
+  left: 10%;
+  bottom: 80px;
+  background: #fff;
+  border-radius: 20px;
+  width: 80%;
+  padding: 10px 5px 80px 10px;
+  box-sizing: border-box;
+}
+
+.list {
+  height: 100%;
+  overflow: auto;
+}
+
+.list li {
+  padding: 10px 0;
+}
+
+.sm-top {
+  display: flex;
+  align-items: center;
+}
+
+.sm-title-img {
+  height: 36px;
+}
+
+.sm-title-text {
+  margin-left: 5px;
+  color: #333333;
+  font-family: osbold;
+}
+
+.sm-mian {
+  padding: 20px 0 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.bar {
+  height: 6px;
+  border-radius: 3px;
+  background: #ccc;
+  padding-right: 12px;
+}
+
+.bar span {
+  position: relative;
+  float: left;
+  width: 0%;
+  height: 6px;
+  border-radius: 3px;
+  background: #EB6623;
+  padding-left: 12px;
+}
+
+.cloud {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: crimson;
+}
+
+.time {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-family: osgothic;
+}
+
+.sm-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm {
+  margin: 0 10px;
+  width: 50px;
+  height: 28px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sm span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.sm-kp {
+  background: #009fe8;
+}
+
+.sm-bf {
+  background-image: url(../image/i_01.png);
+}
+
+.sm-zt {
+  background-image: url(../image/i_02.png);
+}
+
+.sm-cb {
+  background: #eb6622;
+}
+
+.sm-cx {
+  background-size: 14px !important;
+  background-image: url(../image/i_03.png);
+}
