@@ -61,7 +61,11 @@ $(function () {
         $("#list").html(src)
         $(".content").css("background-image", "url(" + baseinfo.MainStyle + ")")
         $('.tp-top').html('<img src="' + baseinfo.BgImg + '" alt="">')
-        $('.tp-bottom').html('<img src="' + baseinfo.BottomImgLeft + '" alt=""><img src="' + baseinfo.BottomImg + '" alt="">')
+        if (baseinfo.BottomImgLeft != '') {
+          $('.tp-bottom').html('<img src="' + baseinfo.BottomImgLeft + '" alt=""><img src="' + baseinfo.BottomImg + '" alt="">')
+        } else {
+          $(".mian").css({"padding-bottom": "10px", "bottom": "50px"})
+        }
         if (len > 0) init()
       } else {
         window.location.replace("./404.html")
@@ -148,13 +152,13 @@ $(function () {
   // 实时改变进度条
   function audioInfo(index, t, s) {
     // 清除其他进度条的进度
-    if(s) {
+    if (s) {
       for (var j = 0; j < len; j++) {
-        if(j != +index) {
+        if (j != +index) {
           console.log(j, +index)
           $("#touch_" + index).css("width", "0%")
         }
-      }      
+      }
     }
     // 播放控件显示隐藏
     timer = t
